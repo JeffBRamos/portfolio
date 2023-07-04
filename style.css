@@ -1,0 +1,752 @@
+@import url('https://fonts.googleapis.com/css2?family= Dela +Gothic+One & display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Dela Gothic One', cursive;
+}
+.main{
+    background-color: black;
+}
+.text{
+    padding-top: 40px;
+    font-size: 40px;
+    color: #00FFCD;
+    text-align: center;
+}
+
+/* cabeçalho */
+header{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 120px;
+}
+nav li{
+    margin-top: 25px;
+}
+li a{
+    display: flex;
+    width: 150px;
+    height: 40px;
+    background: #011c16;
+    border: solid 2px #fff;
+    color: #CAFFF5;
+    text-decoration: none;
+    align-items: center;
+    justify-content: center;
+}
+ul{
+    display: flex;
+    gap: 25px;
+    list-style-type: none;
+}
+li a:hover{
+    transform: scale(1.1);
+    transition: .1s ease all;
+    border: 1px solid #00CCA4;
+}
+
+/* sobre mim */
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.right{
+    display: flex;
+    width: 50vw;
+    height: 60vh;
+    align-items: center;
+}
+.left{
+    display: flex;
+    width: 50vw;
+    height: 60vh;
+    align-items: center;
+}
+.apresentacao{
+    max-width: 750px;
+    font-size: 25px;
+    color: #CAFFF5;
+    text-align: center;
+}
+.minhafoto{
+    width: 35%;
+    display: flex;
+    border: solid 3px #00CCA4;
+    border-radius: 100%;
+    margin-left: 260px;
+}
+/* Habilidades */
+.habilidades{
+    display: flex;
+    justify-content: center;
+    height: 20vh;
+}
+.habilidades li{
+    margin-top: 50px;
+    list-style-type: none;
+    margin-left: 25px;
+    color: #CAFFF5;
+    text-align: center;
+    border: 1px solid #fff;
+    background: #011c16;
+    width: 75px;
+    height: 30px;
+}
+
+/* PROJETOS */
+
+.projetos{
+    max-width: 85%;
+    margin: 0 auto;
+    width: 90%;
+    height: 70vh;
+}
+section{
+    padding: 60px;
+}
+.project{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.box{ 
+    display: inline-block;
+    margin-right: 25px;
+    margin-bottom: 20px;
+    background-color: #011c16;
+    border: 1px solid #fff;
+    border-radius: 10px;
+    padding: 30px;
+    text-align: center;
+}
+.box:hover{
+    transform: scale(1.1);
+    transition: .1s ease all;
+    border: 1px solid #00CCA4;
+}
+.box a:hover{
+    color: #32d8ba;
+}
+.box h2{
+    color: #CAFFF5;
+    font-weight: normal;
+    margin-top: 10px;
+}
+.box a{
+    display: inline-block;
+    color: #CAFFF5;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-top: 10px;
+}
+
+/* CONTATOS */
+
+.contatos{
+    height: 40vh;
+    margin-top: 30px;
+    margin-left: 100px;
+}
+p{
+    border-left: 3px solid #00FFCD;
+    margin-bottom: 20px;
+    color: #CAFFF5;
+}
+.contatos a{
+    list-style-type: none;
+    color: #CAFFF5;
+}
+.contatos a:hover{
+    color: #218875;
+}
+.msm-linha{
+    display: inline-block;
+}
+
+/* roda-pe */
+footer{
+    background-color: #011c16;
+    color: #CAFFF5;
+    padding: 10px;
+    text-align: center;
+}
+.rp{
+    font-weight: normal;
+}
+
+/* ESPACIVEL */
+
+/* Dispositivos móveis com largura entre 481px e 768px */
+@media screen and (min-width: 320px) and (max-width: 480px) {
+
+    .main {
+        background-color: black;
+        max-width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .text{
+        font-size: 20px;
+        padding-top: 20px;
+    }
+  
+    /* Cabeçalho */
+    header {
+        display: none;
+    }
+  
+    /* Sobre Mim */
+
+    .container{
+        display: grid;
+        justify-content: center;
+        align-items: center;
+    }
+    .right{
+        display: flex;
+        width: 100vw;
+        height: 25vh;
+        align-items: center;
+    }
+    .left{
+        margin: auto;
+        display: flex;
+        width: 95vw;
+        height: 30vh;
+        align-items: center;
+    }
+    .apresentacao{
+        max-width: 480px;
+        font-size: 11px;
+        font-weight: normal;
+        color: #CAFFF5;
+        text-align: left;
+    }
+    .minhafoto{
+        margin: 15px auto;
+        width: 30%;
+        border: solid 2px #00CCA4;
+        border-radius: 5%;
+    }
+
+    /* habilidades */
+
+    .habilidades{
+        display: flex;
+        justify-content: center;
+        height: 25vh;
+        max-width: 90%;
+        flex-wrap: wrap;
+        margin: 0 auto;
+    }
+    .habilidades li{
+        margin-top: 15px;
+        list-style-type: none;
+        margin-left: 10px;
+        color: #CAFFF5;
+        font-size: 10px;
+        background: #011c16;
+        width: 50px;
+        height: 20px;
+    }
+  
+    /* Projetos */
+
+    .projetos{
+        max-width: 95%;
+        margin: 0 auto;
+        width: 100%;
+        height: 60vh;
+    }
+    section{
+        padding: 20px;
+    }
+    .project{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .box{ 
+        display: inline-block;
+        margin-right: 10px;
+        margin-bottom: 20px;
+        background-color: #011c16;
+        border: 1px solid #fff;
+        border-radius: 5px;
+        padding: 10px;
+        text-align: center;
+    }
+    .box:hover{
+        display: none;
+    }
+    .box a:hover{
+        display: none;
+    }
+    .box h2{
+        color: #CAFFF5;
+        font-weight: normal;
+        font-size: 10px;
+        margin-top: 10px;
+    }
+    .box a{
+        display: inline-block;
+        color: #CAFFF5;
+        padding: 10px 20px;
+        border-radius: 5px;
+        font-size: 10px;
+        text-decoration: none;
+        margin-top: 10px;
+    }
+  
+    /* Contatos */
+    .contatos {
+        width: 95vw;
+        font-size: 10px;
+        margin-top: 20px;
+        margin-left: 10px;
+    }
+  
+    /* Rodapé */
+    footer {
+        font-size: 10px;
+        font-weight: normal;
+        padding: 3px;
+        width: 100vw;
+    }
+}
+  
+/* Dispositivos móveis com largura entre 481px e 768px */
+@media screen and (min-width: 481px) and (max-width: 768px){
+    .main {
+        background-color: black;
+        max-width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .text{
+        font-size: 20px;
+        padding-top: 20px;
+    }
+  
+    /* Cabeçalho */
+    header {
+        display: none;
+    }
+  
+    /* Sobre Mim */
+
+    .container{
+        display: grid;
+        justify-content: center;
+        align-items: center;
+    }
+    .right{
+        display: flex;
+        width: 100vw;
+        height: 22vh;
+        align-items: center;
+    }
+    .left{
+        margin: auto;
+        display: flex;
+        width: 95vw;
+        height: 25vh;
+        align-items: center;
+    }
+    .apresentacao{
+        max-width: 480px;
+        font-size: 15px;
+        font-weight: normal;
+        color: #CAFFF5;
+        text-align: left;
+    }
+    .minhafoto{
+        margin: 15px auto;
+        width: 30%;
+        border: solid 3px #00CCA4;
+        border-radius: 5%;
+    }
+
+    /* habilidades */
+
+    .habilidades{
+        display: flex;
+        justify-content: center;
+        height: 20vh;
+        max-width: 85%;
+        flex-wrap: wrap;
+        margin: 0 auto;
+    }
+    .habilidades li{
+        margin-top: 15px;
+        list-style-type: none;
+        margin-left: 10px;
+        color: #CAFFF5;
+        font-size: 15px;
+        background: #011c16;
+        width: 60px;
+        height: 28px;
+    }
+  
+    /* Projetos */
+
+    .projetos{
+        max-width: 85%;
+        margin: 0 auto;
+        width: 100%;
+        height: 40vh;
+    }
+    section{
+        padding: 20px;
+    }
+    .project{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .box{ 
+        display: inline-block;
+        margin-right: 10px;
+        margin-bottom: 20px;
+        background-color: #011c16;
+        border: 1px solid #fff;
+        border-radius: 5px;
+        padding: 10px;
+        text-align: center;
+    }
+    .box:hover{
+        display: none;
+    }
+    .box a:hover{
+        display: none;
+    }
+    .box h2{
+        color: #CAFFF5;
+        font-weight: normal;
+        font-size: 15px;
+        margin-top: 10px;
+    }
+    .box a{
+        display: inline-block;
+        color: #CAFFF5;
+        padding: 10px 20px;
+        border-radius: 5px;
+        font-size: 15px;
+        text-decoration: none;
+        margin-top: 10px;
+    }
+  
+    /* Contatos */
+    .contatos {
+        width: 95vw;
+        font-size: 15px;
+        margin-top: 20px;
+        margin-left: 10px;
+        height: 25vh;
+    }
+  
+    /* Rodapé */
+    footer {
+        font-size: 13px;
+        font-weight: normal;
+        padding: 10px;
+        width: 100vw;
+    }
+}
+
+/* Dispositivos móveis com largura entre 769px e 1024px */
+@media screen and (min-width: 769px) and (max-width: 1024px){
+    .main {
+        background-color: black;
+        max-width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .text{
+        font-size: 28px;
+        padding-top: 20px;
+    }
+  
+    /* Cabeçalho */
+    header {
+        display: none;
+    }
+  
+    /* Sobre Mim */
+
+    .container{
+        display: grid;
+        justify-content: center;
+        align-items: center;
+    }
+    .right{
+        display: flex;
+        width: 100vw;
+        height: 27vh;
+        align-items: center;
+    }
+    .left{
+        margin: auto;
+        display: flex;
+        width: 95vw;
+        height: 25vh;
+        justify-content: center;
+        align-items: center;
+    }
+    .apresentacao{
+        max-width: 580px;
+        font-size: 20px;
+        font-weight: normal;
+        color: #CAFFF5;
+        text-align: left;
+    }
+    .minhafoto{
+        margin: 15px auto;
+        width: 25%;
+        border: solid 3px #00CCA4;
+        border-radius: 5%;
+    }
+
+    /* habilidades */
+
+    .habilidades{
+        display: flex;
+        justify-content: center;
+        height: 20vh;
+        max-width: 50%;
+        flex-wrap: wrap;
+        margin: 0 auto;
+    }
+    .habilidades li{
+        margin-top: 15px;
+        list-style-type: none;
+        margin-left: 15px;
+        color: #CAFFF5;
+        font-size: 20px;
+        background: #011c16;
+        width: 75px;
+        height: 35px;
+    }
+  
+    /* Projetos */
+
+    .projetos{
+        max-width: 80%;
+        margin: 0 auto;
+        width: 100%;
+        height: 40vh;
+    }
+    section{
+        padding: 20px;
+    }
+    .project{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .box{ 
+        display: inline-block;
+        margin-right: 10px;
+        margin-bottom: 20px;
+        background-color: #011c16;
+        border: 1px solid #fff;
+        border-radius: 5px;
+        padding: 10px;
+        text-align: center;
+    }
+    .box:hover{
+        display: none;
+    }
+    .box a:hover{
+        display: none;
+    }
+    .box h2{
+        color: #CAFFF5;
+        font-weight: normal;
+        font-size: 20px;
+        margin-top: 10px;
+    }
+    .box a{
+        display: inline-block;
+        color: #CAFFF5;
+        padding: 10px 20px;
+        border-radius: 5px;
+        font-size: 20px;
+        text-decoration: none;
+        margin-top: 10px;
+    }
+  
+    /* Contatos */
+    .contatos {
+        width: 95vw;
+        font-size: 20px;
+        margin-top: 20px;
+        margin-left: 10px;
+        height: 25vh;
+    }
+  
+    /* Rodapé */
+    footer {
+        font-size: 15px;
+        font-weight: normal;
+        padding: 15px;
+        width: 100vw;
+    }
+}
+
+/* Dispositivos móveis com largura entre 1025px e 1200px */
+@media screen and (min-width: 1025px) and (max-width: 1200px){
+    .main {
+        background-color: black;
+        max-width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .text{
+        font-size: 35px;
+        padding-top: 20px;
+    }
+  
+    /* Cabeçalho */
+    header {
+        display: none;
+    }
+  
+    /* Sobre Mim */
+
+    .container{
+        display: grid;
+        justify-content: center;
+        align-items: center;
+    }
+    .right{
+        width: 100vw;
+        height: 25vh;
+        align-items: center;
+    }
+    .left{
+        margin: auto;
+        display: flex;
+        width: 95vw;
+        height: 25vh;
+        justify-content: center;
+        align-items: center;
+    }
+    .apresentacao{
+        width: 90%;
+        font-size: 25px;
+        font-weight: normal;
+        color: #CAFFF5;
+        text-align: left;
+    }
+    .minhafoto{
+        margin: 15px auto;
+        width: 25%;
+        border: solid 3px #00CCA4;
+        border-radius: 5%;
+    }
+
+    /* habilidades */
+
+    .habilidades{
+        display: flex;
+        justify-content: center;
+        height: 20vh;
+        max-width: 50%;
+        flex-wrap: wrap;
+        margin: 0 auto;
+    }
+    .habilidades li{
+        margin-top: 15px;
+        list-style-type: none;
+        margin-left: 15px;
+        color: #CAFFF5;
+        font-size: 25px;
+        background: #011c16;
+        width: 85px;
+        height: 45px;
+    }
+  
+    /* Projetos */
+
+    .projetos{
+        max-width: 80%;
+        margin: 0 auto;
+        width: 100%;
+        height: 40vh;
+    }
+    section{
+        padding: 20px;
+    }
+    .project{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .box{ 
+        display: inline-block;
+        margin-right: 15px;
+        margin-top: 10px;
+        margin-bottom: 20px;
+        background-color: #011c16;
+        border: 1px solid #fff;
+        border-radius: 5px;
+        padding: 10px;
+        text-align: center;
+    }
+    .box:hover{
+        display: none;
+    }
+    .box a:hover{
+        display: none;
+    }
+    .box h2{
+        color: #CAFFF5;
+        font-weight: normal;
+        font-size: 25px;
+        margin-top: 10px;
+    }
+    .box a{
+        display: inline-block;
+        color: #CAFFF5;
+        padding: 10px 20px;
+        border-radius: 5px;
+        font-size: 25px;
+        text-decoration: none;
+        margin-top: 10px;
+    }
+  
+    /* Contatos */
+    .contatos {
+        width: 95vw;
+        font-size: 25px;
+        margin-top: 25px;
+        margin-left: 10px;
+        height: 25vh;
+    }
+  
+    /* Rodapé */
+    footer {
+        font-size: 20px;
+        font-weight: normal;
+        padding: 20px;
+        width: 100vw;
+    }
+}
